@@ -6,24 +6,42 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Resume</title>
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 body {
     width: 100%;
     overflow-x:hidden;
 }
 .navig {
-    background-color: red;
     text-align: center;
     font-size: 5vmin;
+    font-family: 'Alata', sans-serif;
+    border-bottom: black 1px solid;
+    padding-bottom: 2vmin;
+    margin-top: 2vmin;
+}
+.buttons {
+    font-size: 4vmin;
+    margin-top: 1%;
 }
     </style>
 </head>
 <body>
     <div class="navig">
         <div class="row justify-content-center">
-                <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-3 col-xl-2">Space-1</div>
-                <div class="col-6 col-sm-5 col-md-2 col-lg-3 col-xl-4">Logo</div>
-                <div class="col-6 col-sm-5 col-md-2 col-lg-3 col-xl-4">Navbar</div>
-                <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-3 col-xl-2 ">Space-2</div>
+                <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-3 col-xl-2 d-xl-none"></div>
+                <div class="col-6 col-sm-5 col-md-2 col-lg-3 col-xl-7" style="color: skyblue;">Sanya30061991</div>
+                <div class="col-6 col-sm-5 col-md-2 col-lg-3 col-xl-5 d-sm-block d-none">
+                    <div class="buttons">
+                        <div class="row">
+                            <div class="col">button</div>
+                            <div class="col">button</div>
+                            <div class="col">button</div>
+                            <div class="col">button</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-3 col-xl-2 d-xl-none"></div>
+                <div class="d-sm-none d-block">panel</div>
         </div>
     </div>
 </body>
