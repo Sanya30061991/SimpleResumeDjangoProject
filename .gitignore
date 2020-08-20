@@ -1,1 +1,5 @@
 secretkey.txt
+
+#ignoring cache files
+Resume/__pycache__/
+ResumeContent/__pycache__/
