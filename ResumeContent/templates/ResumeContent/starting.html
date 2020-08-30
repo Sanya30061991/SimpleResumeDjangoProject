@@ -43,6 +43,8 @@ body {
 #micro-menu {
     position: relative;
     display: none;
+    width: 100%;
+    text-align: center;
 }
 #iconn:focus + #micro-menu {
     display: block;
@@ -50,7 +52,14 @@ body {
 .el {
     position: relative;
     width: 100%;
-    justify-items: center;
+    text-decoration: none;
+}
+.el:hover {
+    background-color: rgb(137, 221, 255);
+    
+}
+.el-link:hover {
+    color: rgb(41, 114, 143);
 }
     </style>
 </head>
@@ -77,10 +86,10 @@ body {
                     </div>
                 </button>
                 <div id="micro-menu">
-                    <div class="el">Home</div>
-                    <div class="el">Sites</div>
-                    <div class="el">Skills</div>
-                    <div class="el">Contacts</div>
+                    <div class="el"><a href="" class="el-link">Home</a></div>
+                    <div class="el"><a href="" class="el-link">Sites</a></div>
+                    <div class="el"><a href="" class="el-link">Skills</a></div>
+                    <div class="el"><a href="" class="el-link">Contacts</a></div>
                 </div>
         </div>
     </header>
