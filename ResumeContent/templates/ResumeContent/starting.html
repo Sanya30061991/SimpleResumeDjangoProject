@@ -16,14 +16,13 @@ body {
 }
 .navig {
     text-align: center;
-    /* font-size: 2vmax; */
+    font-size: 1vw + 1.5vh;
     font-family: 'Alata', sans-serif;
     background-color: skyblue;
     padding-bottom: 2vmin;
     margin-top: 2vmin;
 }
 .buttons {
-    /* font-size: 1.5vmax; */
     margin-top: 1%;
     padding: 0% 2%;
 }
@@ -31,10 +30,32 @@ body {
     position: relative;
     height: 10vw;
 }
+#iconn {
+    background-color: transparent;
+    border: 0px;
+}
+#iconn:active, #iconn:focus {
+  outline: none !important;
+}
+#iconn::-moz-focus-inner {
+  border: 0 !important;
+}
+#micro-menu {
+    position: relative;
+    display: none;
+}
+#iconn:focus + #micro-menu {
+    display: block;
+}
+.el {
+    position: relative;
+    width: 100%;
+    justify-items: center;
+}
     </style>
 </head>
 <body>
-    <div class="navig">
+    <header class="navig">
         <div class="row align-items-center">
                 <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-2 col-xl-2 d-xl-none"></div>
                 <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-xl-7" style="color: white; margin-top: 1%;">Sanya19913006</div>
@@ -50,12 +71,18 @@ body {
                     </div>
                 </div>
                 <div class="d-none d-sm-block col-sm-1 col-md-1 col-lg-1 col-xl-1 d-xl-none"></div>
-                <div class="d-sm-none d-block">
-                    <a href="">
+                <button id="iconn">
+                    <div class="d-sm-none d-block">
                         <img src="https://aviata.kz/static/images/special_refunds/burger.png" alt="" class="panel">
-                    </a>
+                    </div>
+                </button>
+                <div id="micro-menu">
+                    <div class="el">Home</div>
+                    <div class="el">Sites</div>
+                    <div class="el">Skills</div>
+                    <div class="el">Contacts</div>
                 </div>
         </div>
-    </div>
+    </header>
 </body>
 </html>
