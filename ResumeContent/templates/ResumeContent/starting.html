@@ -7,6 +7,7 @@
     <title>Resume</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+html { font-size: calc(1em + 1vw) }
 body {
     width: 100%;
     overflow-x:hidden;
@@ -15,35 +16,45 @@ body {
 }
 .navig {
     text-align: center;
-    font-size: 5vmin;
+    /* font-size: 2vmax; */
     font-family: 'Alata', sans-serif;
     background-color: skyblue;
     padding-bottom: 2vmin;
     margin-top: 2vmin;
 }
 .buttons {
-    font-size: 4vmin;
+    /* font-size: 1.5vmax; */
     margin-top: 1%;
+    padding: 0% 2%;
+}
+.panel {
+    position: relative;
+    height: 10vw;
 }
     </style>
 </head>
 <body>
     <div class="navig">
-        <div class="row justify-content-center">
+        <div class="row align-items-center">
                 <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-2 col-xl-2 d-xl-none"></div>
-                <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-xl-7" style="color: white;">Sanya30061991</div>
-                <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-xl-5 d-sm-block d-none">
+                <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-xl-7" style="color: white; margin-top: 1%;">Sanya19913006</div>
+                <div class="col-4 d-sm-none"></div>
+                <div class="col-2 col-sm-5 col-md-4 col-lg-4 col-xl-5 d-sm-block d-none">
                     <div class="buttons">
                         <div class="row">
-                            <div class="col-3">button</div>
-                            <div class="col-3">button</div>
-                            <div class="col-3">button</div>
-                            <div class="col-3">button</div>
+                            <div class="col-3"><a href="">Home</a></div>
+                            <div class="col-3"><a href="">Sites</a></div>
+                            <div class="col-3"><a href="">Skills</a></div>
+                            <div class="col-3"><a href="">Contacts</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-2 col-xl-2 d-xl-none"></div>
-                <div class="d-sm-none d-block">panel</div>
+                <div class="d-none d-sm-block col-sm-1 col-md-1 col-lg-1 col-xl-1 d-xl-none"></div>
+                <div class="d-sm-none d-block">
+                    <a href="">
+                        <img src="https://aviata.kz/static/images/special_refunds/burger.png" alt="" class="panel">
+                    </a>
+                </div>
         </div>
     </div>
 </body>
