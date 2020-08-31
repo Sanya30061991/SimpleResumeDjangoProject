@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Resume</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 html { font-size: calc(1em + 1vw) }
 body {
     width: 100%;
@@ -71,8 +71,17 @@ body {
     color: rgb(22, 126, 223);
 }
 .introducing {
-    font-size: calc(0.8em + 0.8vw);
+    position: relative;
     font-family: 'Quicksand', sans-serif;
+}
+.underln {
+    position: relative;
+    border: 0px transparent black;
+    width: 100%;
+    border-bottom: 1px grey solid;
+}
+.bio-text {
+    display: inline-block;
 }
     </style>
 </head>
@@ -114,9 +123,19 @@ body {
         <h3 class="introducing" style="font-size: calc(0.7em + 0.7vw);">
             You might be intresed, who am I, what the site is it, what is programming and why are you here?
         </h3>
-        <h2 class="introducing">
+        <h2 class="introducing" style="font-size: calc(0.6em + 0.6vw);"">
             That is okay, if you want to leave, but if You will stay, you can rate this resume project and check my other projects on GitHub.
         </h2>
+        <div class="underln" style="padding-top: 5%;"></div>
+        <h1 class="introducing" style="font-size: calc(0.9em + 0.9vw); font-family: 'Mukta', sans-serif; padding-top: 5%;">So who am I?</h1>
+        <div class="bio-photo d-sm-inline-block d-none" style="position: relative; width: 30%; margin-bottom: 2%;">
+            <img src="" alt="">
+        </div>
+        <div class="bio-text d-sm-inline-block d-none" style="position: relative; width: 65%; border: 0px; border-left: 1px grey solid; margin-bottom: 2%; padding-left: 5%;">fjkiesaiodfkieiofjj f ejiow f jiewjiof jewio jifoew jfioew</div>
+        <div class="small_bio_photo d-block d-sm-none" style="position: relative; width: 100%;">
+            <img src="" alt="">
+        </div>
+        <div class="small_bio_text d-block d-sm-none" style="position: relative; width: 80%; margin-top: 5%; border: 0px transparent grey; border-top: 1px grey solid; margin-left: 10%;"><br>fewsf</div>
     </div>
 </body>
 </html>
