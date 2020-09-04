@@ -30,6 +30,14 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+# Static files PATH
+STATIC_URL = '/static/'
+
 # Application definition
 
 INSTALLED_APPS = [
