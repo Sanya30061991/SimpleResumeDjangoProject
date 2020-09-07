@@ -35,10 +35,6 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
-# Static files PATH
-STATIC_URL = '/static/'
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -128,4 +124,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATICFILES_DIRS = [
+    BASE_DIR + '/static-cdn',
+    BASE_DIR + '/media-cdn',
+]
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = BASE_DIR + '/static-cdn'
+MEDIA_ROOT = BASE_DIR + '/media-cdn'
+
