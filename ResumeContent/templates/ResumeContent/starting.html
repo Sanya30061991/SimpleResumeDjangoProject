@@ -9,7 +9,11 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
-html { font-size: calc(1em + 1vw) }
+html { 
+    font-size: calc(1em + 1vw);
+    margin: 0;
+    padding: 0;
+}
 body {
     width: 100%;
     overflow-x:hidden;
@@ -89,7 +93,6 @@ body {
     width: 80%;
     border-radius: 50%;
     height: 80%;
-    
 }
 
 .s-photo {
@@ -150,7 +153,8 @@ body {
         <div class="small_bio_photo d-block d-sm-none" style="position: relative; width: 100%;">
             <img class="s-photo" src="{% static "ResumeContent/a.jpg" %}" alt="My image">
         </div>
-        <div class="small_bio_text d-block d-sm-none" style="position: relative; width: 80%; margin-top: 5%; border: 0px transparent grey; border-top: 1px grey solid; margin-left: 10%;"><br>fewsf</div>
+        <div class="small_bio_text d-block d-sm-none" style="position: relative; width: 80%; margin-top: 5%; border: 0px transparent grey; border-top: 1px grey solid; margin-left: 10%; font-size: calc(0.8em + 0.6vw); font-family: 'Quicksand', sans-serif; "><br>Hello! My name is Alexander, I'm 19 years old at the moment and i like programming (so much). I've graduated from gymnasium, entered in IITU university, learnt different programming languages, and right now (I mean, at the moment), I'm practicing on Django web-framework, so this site is a small part of the whole my programmer's path.</div>
+        
     </div>
 </body>
 </html>
