@@ -84,6 +84,20 @@ body {
 .bio-text {
     display: inline-block;
 }
+.b-photo {
+    position: relative;
+    width: 80%;
+    border-radius: 50%;
+    height: 80%;
+    
+}
+
+.s-photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
     </style>
 </head>
 <body>
@@ -129,12 +143,12 @@ body {
         </h2>
         <div class="underln" style="padding-top: 5%;"></div>
         <h1 class="introducing" style="font-size: calc(0.9em + 0.9vw); font-family: 'Mukta', sans-serif; padding-top: 5%;">So, who am I?</h1>
-        <div class="bio-photo d-sm-inline-block d-none" style="position: relative; width: 30%; margin-bottom: 200%;">
-            <img src="{% static "ResumeContent/a.jpeg" %}" alt="My image">
+        <div class="bio-photo d-sm-inline-block d-none" style="position: relative; width: 30%;">
+            <img class="b-photo" src="{% static "ResumeContent/a.jpg" %}" alt="My image">
         </div>
-        <div class="bio-text d-sm-inline-block d-none" style="position: relative; width: 65%; border: 0px; border-left: 1px grey solid; margin-bottom: 2%; padding-left: 5%;">fjkiesaiodfkieiofjj f ejiow f jiewjiof jewio jifoew jfioew</div>
+        <div class="bio-text d-sm-inline-block d-none" style="position: relative; width: 65%; border: 0px; border-left: 1px grey solid; padding-left: 5%; font-size: calc(0.5em + 0.3vw); font-family: 'Quicksand', sans-serif; display:inline-block; vertical-align:middle;">Hello! My name is Alexander, I'm 19 years old at the moment and i like programming (so much). I've graduated from gymnasium, entered in IITU university, learnt different programming languages, and right now (I mean, at the moment), I'm practicing on Django web-framework, so this site is a small part of the whole my programmer's path.</div>
         <div class="small_bio_photo d-block d-sm-none" style="position: relative; width: 100%;">
-            <img src="{% static "ResumeContent/a.jpeg" %}" alt="My image">
+            <img class="s-photo" src="{% static "ResumeContent/a.jpg" %}" alt="My image">
         </div>
         <div class="small_bio_text d-block d-sm-none" style="position: relative; width: 80%; margin-top: 5%; border: 0px transparent grey; border-top: 1px grey solid; margin-left: 10%;"><br>fewsf</div>
     </div>
