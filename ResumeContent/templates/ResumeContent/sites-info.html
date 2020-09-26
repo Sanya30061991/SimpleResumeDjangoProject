@@ -75,31 +75,18 @@ body {
 #logo-link:hover {
     color: rgb(22, 126, 223);
 }
-.introducing {
-    position: relative;
-    font-family: 'Quicksand', sans-serif;
-}
-.underln {
-    position: relative;
-    border: 0px transparent black;
-    width: 100%;
-    border-bottom: 1px grey solid;
-}
-.bio-text {
-    display: inline-block;
-}
-.b-photo {
-    position: relative;
-    width: 80%;
-    border-radius: 50%;
-    height: 80%;
+.elements {
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
 }
 
-.s-photo {
+.banner {
     position: relative;
     width: 100%;
+    border-radius: 1.5%;
     height: 100%;
-    border-radius: 50%;
+    background-color: rgb(60, 176, 248);
+    color: white;
 }
     </style>
 </head>
@@ -133,8 +120,26 @@ body {
                     <div class="el"><a href="" class="el-link">Contacts</a></div>
                 </div>
                 </div>
+            </div>
+        </header>
+        <div class="container" style="background-color: rgba(128, 128, 128, 0.205); text-align: center;">
+            <h1 style="font-family: 'Mukta', sans-serif; font-size: calc(1em + 1vw);">There are some of my Django projects, which are ready at the moment of this web-page creation.</h1>
+            <div class="elements" style="padding-top: 3%;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="banner">Task Manager</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="banner">Polls App</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="banner">Weather App</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="banner">Quiz App</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    
-</body>
+        </body>
 </html>
