@@ -88,7 +88,15 @@ body {
     background-color: rgb(60, 176, 248);
     color: white;
     font-size: calc(1vw+1em);
+    transition: 0.5s;
 }
+
+.banner:hover {
+    background-color:  rgb(83, 184, 246);
+    transition: 0.5s;
+}
+
+
     </style>
 </head>
 <body>
@@ -102,7 +110,7 @@ body {
                     <div class="row">
                         <div class="col-3"><a href="main">Home</a></div>
                             <div class="col-3"><a href="sites-info">Sites</a></div>
-                            <div class="col-3"><a href="">Skills</a></div>
+                            <div class="col-3"><a href="skills">Skills</a></div>
                             <div class="col-3"><a href="">Contacts</a></div>
                         </div>
                     </div>
@@ -127,31 +135,39 @@ body {
             <h1 style="font-family: 'Mukta', sans-serif; font-size: calc(1em + 1vw);">There are some of my Django projects, which are ready at the moment of this web-page creation.</h1>
             <div class="elements" style="padding-top: 3%;">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="background-color: rgb(192, 192, 192);">
-                        <div class="banner">Task Manager</div>
-                        <div class="img_handler""><img src="{% static "ResumeContent/todo.png" %}" alt="" style="position: relative; width: 100%;"></div>
-                        <div class="desc">This app alows users to manage their tasks and targets during the day.</div>
-                        <div class="rate" style="font-size: calc(1em+1vw); color: rgb(35, 156, 30);">Difficulty level:  1/5</div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="background-color: rgb(192, 192, 192);">
-                        <div class="banner">Polls App</div>
-                        <div class="img_handler""><img src="{% static "ResumeContent/vote.png" %}" alt="" style="position: relative; width: 100%;"></div>
-                        <div class="desc">Works same as google forms. Just a simple app to create polls and vote.</div>
-                        <div class="rate" style="font-size: calc(1em+1vw); color: rgb(195, 101, 13);">Difficulty level:  2.7/5</div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="background-color: rgb(192, 192, 192);">
-                        <div class="banner">Weather App</div>
-                        <div class="img_handler""><img src="{% static "ResumeContent/weather.png" %}" alt="" style="position: relative; width: 100%;"></div>
-                        <div class="desc">In my opinion, the most simple app, which allows you to see current weather.</div>
-                        <div class="rate" style="font-size: calc(1em+1vw); color: green;">Difficulty level:  0.5/5</div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="background-color: rgb(192, 192, 192);">
-                        <div class="banner">Quiz App</div>
-                        <div class="img_handler""><img src="{% static "ResumeContent/quiz.png" %}" alt="" style="position: relative; width: 100%;"></div>
-                        <div class="desc">The hardest django project at the moment, which is familiar with quizlet, but not good as it.</div>
-                        <div class="rate" style="font-size: calc(1em+1vw); color: orangered;">Difficulty level:  3.7/5</div>
-                    </div>
-                </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-top: 2%; background-color: rgb(192, 192, 192); text-decoration: none;">
+                        <a href="https://github.com/Sanya30061991/DjangoTaskManager">
+                            <div class="banner">Task Manager</div>
+                            <div class="img_handler""><img src="{% static "ResumeContent/todo.png" %}" alt="" style="position: relative; width: 100%;"></div>
+                            <div class="desc">This app alows users to manage their tasks and targets during the day.</div>
+                            <div class="rate" style="font-size: calc(1em+1vw); color: rgb(35, 156, 30);">Difficulty level:  1/5</div>
+                        </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-top: 2%; background-color: rgb(192, 192, 192); text-decoration: none;">
+                            <a href="https://github.com/Sanya30061991/SimpleDjangoPollApp">
+                            <div class="banner">Polls App</div>
+                            <div class="img_handler""><img src="{% static "ResumeContent/vote.png" %}" alt="" style="position: relative; width: 100%;"></div>
+                            <div class="desc">Works same as google forms. Just a simple app to create polls and vote.</div>
+                            <div class="rate" style="font-size: calc(1em+1vw); color: rgb(195, 101, 13);">Difficulty level:  2.7/5</div>
+                        </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-top: 2%; background-color: rgb(192, 192, 192); text-decoration: none;">
+                            <a href="https://github.com/Sanya30061991/SimpleDjangoWeatherApp">
+                            <div class="banner">Weather App</div>
+                            <div class="img_handler""><img src="{% static "ResumeContent/weather.png" %}" alt="" style="position: relative; width: 100%;"></div>
+                            <div class="desc">In my opinion, the most simple app, which allows you to see current weather.</div>
+                            <div class="rate" style="font-size: calc(1em+1vw); color: green;">Difficulty level:  0.5/5</div>
+                        </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-top: 2%; background-color: rgb(192, 192, 192); text-decoration: none;">
+                            <a href="https://github.com/Sanya30061991/QuizAppDjango">
+                            <div class="banner">Quiz App</div>
+                            <div class="img_handler""><img src="{% static "ResumeContent/quiz.png" %}" alt="" style="position: relative; width: 100%;"></div>
+                            <div class="desc">The hardest django project at the moment, which is familiar with quizlet, but not good as it.</div>
+                            <div class="rate" style="font-size: calc(1em+1vw); color: orangered;">Difficulty level:  3.7/5</div>
+                        </a>
+                        </div>
+                </div> text-decoration: none;
             </div>
             <h1 style="font-family: 'Mukta', sans-serif; font-size: calc(1em + 1vw);">At the moment I'm working on this list of sites, so it will be extended in half an year (1-2 years actually).</h1>
         </div>
